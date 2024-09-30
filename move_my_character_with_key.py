@@ -52,8 +52,8 @@ while walking:
     update_canvas()
     handle_events()
 
-    if dir_x != 0 or dir_y != 0:
-        frame = (frame + 1) % 4
+    # if dir_x != 0 or dir_y != 0:  idle 애니메이션
+    frame = (frame + 1) % 4
 
     x += dir_x * 5
     y += dir_y * 5
