@@ -55,10 +55,20 @@ while walking:
     # if dir_x != 0 or dir_y != 0:  idle 애니메이션
     frame = (frame + 1) % 4
 
-    x += dir_x * 5
-    y += dir_y * 5
+    x += dir_x * 7
+    y += dir_y * 7
+
+    # 경계
+    if x < 0:
+        x = 0
+    elif x > 800:
+        x = 800
+
+    if y < 0:
+        y = 0
+    elif y > 600:
+        y = 600
 
     delay(0.05)
 
 close_canvas()
-
